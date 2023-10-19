@@ -1,0 +1,7 @@
+# Notion
+NOTION_API_KEY=
+NOTION_BASE_URL=
+NOTION_DATBASE_ID=
+
+# recalculation
+RECALCULATE=false
