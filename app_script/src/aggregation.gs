@@ -11,7 +11,7 @@ function aggregateByDate(budget_spreadsheet) {
     let createdAtDatetime = record[TRANSACTION_SHEET_VALUE_INDEX_MAPPING['created_at']]
     let createdAtDate = convertISODatetimeToLocalDateWithTime(createdAtDatetime)
 
-    if(!RECALCULATE) {
+    if(RECALCULATE != 1) {
       let isToday = isDateIsToday(createdAtDate)
       if (isToday !== true) return
     }
